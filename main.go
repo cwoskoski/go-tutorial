@@ -44,6 +44,7 @@ func main() {
 		match := MatchAcceptVersion(k, v)
 		if match.Matched {
 			newPath = "/" + s.ToLower(match.Version) + newPath
+			break
 		}
 	}
 
